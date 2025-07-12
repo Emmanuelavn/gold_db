@@ -1,0 +1,10 @@
+services:
+  - type: pserv
+    name: mysql-benito
+    env: docker
+    plan: starter  # ou free si dispo
+    disk:
+      name: mysql-disk
+      mountPath: /var/lib/mysql
+    dockerfilePath: Dockerfile
+    autoDeploy: true
